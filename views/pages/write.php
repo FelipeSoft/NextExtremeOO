@@ -2,7 +2,7 @@
 <?php require '../partials/header.php' ?>
 <section id="formNews">
         <?php require '../partials/postModal.php'; ?>
-        <form action="<?=$base;?>/actions/post_action.php" method="post">
+        <form action="<?=$base;?>/actions/post_action.php" method="post" enctype="multipart/form-data">
             <div class="titleNews">
                 <label>
                 <div><p>Título</p><span>*</span></div>

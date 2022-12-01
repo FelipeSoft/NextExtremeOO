@@ -11,7 +11,7 @@ $data = $postDao->getAllPosts();
         <main>
             <?php foreach($data as $d): ?>
                 <div class="post-item">
-                <img src="https://th.bing.com/th/id/OIP.EivCYmfxSccqnP2poBJtQgHaEK?pid=ImgDet&rs=1" alt="img">
+                <img src="<?=$base;?>/assets/photos/<?=$d['image'];?>" alt="img">
                 <p class="data-theme"><?=$d['created_at'].' - '.$d['category'];?></p>
                 <h3><?=$d['title'];?></h3>
                 <p class="subtitle"><?=$d['subtitle'];?></p>

@@ -10,6 +10,19 @@ $img = filter_input(INPUT_POST, 'image', FILTER_SANITIZE_SPECIAL_CHARS);
 $body = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_SPECIAL_CHARS);
 
 if($title && $subtitle && $category && $body){
+    if(isset($_FILES['image'])){
+        $extension = explode('.',$_FILES['image']['name']);
+        $file_extensions = array('jpg', 'jpeg', 'png');
+
+        if(in_array($extension[1], $file_extensions)){    
+            $new_name = md5(time()) . '.' . $extension[1];
+            $dir = "../assets/photos/";
+            move_uploaded_file($_FILES['image']['tmp_name'], $dir . $new_name);
+        } else {
+            die("Arquivo não permitido!");
+        }
+    }
+    
     $post = new Post();
     $postDao = new PostDaoMySql($pdo, $base);
     $now =  date('d/m/Y H:i:s');
@@ -18,7 +31,7 @@ if($title && $subtitle && $category && $body){
     $post->subtitle = $subtitle;
     $post->category = $category;
     $post->body = $body;
-    $post->image = $img;
+    $post->image = $new_name ?? '';
 
     $postDao->createNewPost($post);
 
