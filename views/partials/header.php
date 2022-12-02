@@ -49,8 +49,8 @@
             <div class="second-header">
                 <h2>Blog</h2>
                 <div>
-                    <a href="">Entrar</a>
-                    <a href="">Inscreva-se</a>
+                    <a href="<?=$base;?>/views/pages/login.php">Entrar</a>
+                    <a href="<?=$base;?>/views/pages/register.php">Inscreva-se</a>
                 </div>
             </div>
         </div>

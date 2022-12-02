@@ -21,47 +21,6 @@
                 <a href="">Angular</a>
                 <a href="">Git/Github</a>
             </div>
-            <div class="top-posts">
-                <div class="top-item">
-                    <div class="number">1</div>
-                    <div class="content">
-                        <h4>Título do Top Post</h4>
-                        <p>Há 57 minutos - Tema</p>
-                    </div>
-                </div>
-    
-                <div class="top-item">
-                    <div class="number">2</div>
-                    <div class="content">
-                        <h4>Título do Top Post</h4>
-                        <p>Há 57 minutos - Tema</p>
-                    </div>
-                </div>
-    
-                <div class="top-item">
-                    <div class="number">3</div>
-                    <div class="content">
-                        <h4>Título do Top Post</h4>
-                        <p>Há 57 minutos - Tema</p>
-                    </div>
-                </div>
-    
-                <div class="top-item">
-                    <div class="number">4</div>
-                    <div class="content">
-                        <h4>Título do Top Post</h4>
-                        <p>Há 57 minutos - Tema</p>
-                    </div>
-                </div>
-    
-                <div class="top-item">
-                    <div class="number">5</div>
-                    <div class="content">
-                        <h4>Título do Top Post</h4>
-                        <p>Há 57 minutos - Tema</p>
-                    </div>
-                </div>
-            </div>
         </aside>
     
             
